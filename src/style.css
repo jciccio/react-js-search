@@ -1,0 +1,51 @@
+.searchComponent{
+  font-family: Helvetica;
+  font-size: 14px;
+  padding: 0px 0px;
+  overflow: auto;
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+.search-container {
+  
+}
+
+ input[type=text] {
+  padding: 4px;
+  margin-top: 8px;
+  font-size: 17px;
+ 
+}
+
+.search-container button {
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+  .a,  input[type=text], .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 14px;
+  }
+  input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
