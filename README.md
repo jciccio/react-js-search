@@ -51,7 +51,7 @@ For example:
 | placeholder | String   |N  | Default: 'Search...', Place holder text for the textfield |
 
 
-#What's new
+# What's new
 v0.1.0
 * Search bar with callbacks and customizable placeholder text
 

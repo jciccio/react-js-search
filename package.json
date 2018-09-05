@@ -1,7 +1,7 @@
 {
   "name": "react-js-search",
-  "version": "0.0.1",
-  "description": "React JS tables and log viewer with stats if needed. Has the functionality to dowload table contents in CSV file with data stored in class prop.",
+  "version": "0.1.0",
+  "description": "Really simple search component, plug and play where you define two callbacks that are triggered when the search text has changed or when the user clicks on the search button. It will trigger back the defined function with the typed String as param so you can filter a table, call your backend, etc. ",
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^16.0.0"
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jciccio/react-table-with-csv-download.git"
+    "url": "https://github.com/jciccio/react-js-search"
   },
   "keywords": [
     "search",
@@ -48,5 +48,5 @@
     "react search bar"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/jciccio/react-table-with-csv-download"
+  "homepage": "https://github.com/jciccio/react-js-search"
 }
