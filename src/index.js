@@ -21,6 +21,17 @@ class SearchBar extends Component {
     
   }
 
+  // Search will be done using:
+  // Object with data -> prop (data)
+  // Haystack to search (object property) -> prop (haystack)
+  search (searchTerm){
+    let results = undefined;
+    if (this.props.data){
+      results = this.props.data.filter(object => Object.values(object).join().includes(searchTerm));   
+    } 
+    return results;
+  }
+
   render() {
     let placeholderText = "Search...";
     if (this.props.placeHolderText)
@@ -45,13 +56,15 @@ class SearchBar extends Component {
 
   onSearchChange(e){
     this.setState({searchValue: e.target.value});
-    if (this.props.onSearchTextChange)
-      this.props.onSearchTextChange(e.target.value);
+    if (this.props.onSearchTextChange){
+      this.props.onSearchTextChange(e.target.value,this.search(e.target.value));
+    }
   }
 
   onSearchClick(e){
-    if (this.props.onSearchButtonClick)
-      this.props.onSearchButtonClick(this.state.searchValue);
+    if (this.props.onSearchButtonClick){
+      this.props.onSearchButtonClick(this.state.searchValue, this.search(e.target.value));
+    }
   }
 
 
@@ -60,7 +73,8 @@ class SearchBar extends Component {
 SearchBar.propTypes = {
   onSearchTextChange: PropTypes.func,
   onSearchButtonClick: PropTypes.func,
-  placeHolderText: PropTypes.string
+  placeHolderText: PropTypes.string,
+  data: PropTypes.array
 };
 
 export default SearchBar;
