@@ -27,7 +27,13 @@ class SearchBar extends Component {
   search (searchTerm){
     let results = undefined;
     if (this.props.data){
-      results = this.props.data.filter(object => Object.values(object).join().includes(searchTerm));   
+      if(this.props.caseInsensitive){
+        results = this.props.data.toLowerCase().filter(object => Object.values(object).join().includes(searchTerm.toLowerCase()));
+      }
+      else{
+        results = this.props.data.filter(object => Object.values(object).join().includes(searchTerm));
+      }
+      
     } 
     return results;
   }
@@ -66,7 +72,6 @@ class SearchBar extends Component {
       this.props.onSearchButtonClick(this.state.searchValue, this.search(e.target.value));
     }
   }
-
 
 }
 

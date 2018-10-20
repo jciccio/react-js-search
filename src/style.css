@@ -7,19 +7,17 @@
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-
-.search-container {
+.searchComponent .search-container {
   
 }
 
- input[type=text] {
+.searchComponent input[type=text] {
   padding: 4px;
   margin-top: 8px;
   font-size: 17px;
- 
 }
 
-.search-container button {
+.searchComponent .search-container button {
   padding: 6px 10px;
   background: #ddd;
   font-size: 17px;
@@ -27,22 +25,22 @@
   cursor: pointer;
 }
 
-.search-container button:hover {
+.searchComponent .search-container button:hover {
   background: #ccc;
 }
 
 @media screen and (max-width: 600px) {
-  .search-container {
+  .searchComponent .search-container {
     float: none;
   }
-  .a,  input[type=text], .search-container button {
+  .searchComponent .a, .searchComponent input[type=text], .search-container button {
     float: none;
     display: block;
     text-align: left;
     margin: 0;
     padding: 14px;
   }
-  input[type=text] {
+  .searchComponent input[type=text] {
     border: 1px solid #ccc;  
   }
 }

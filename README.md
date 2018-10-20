@@ -70,8 +70,17 @@ data={this.state.dataObjects}
 | onSearchButtonClick | function     | Y| Function to call back when the search button is pressed |
 | placeholder | String   |N  | Default: 'Search...', Place holder text for the textfield |
 | data | Array |N| An array of objects that will be used to search stuff (if not passed, function will trigger back the term searched)| 
+| caseInsensitive | boolean |N| do searches without casing| 
+
+
 
 # What's new
+
+v0.2.4
+* new case insensitve search
+
+v0.2.1
+* Search CSS isolation
 
 v0.2.0
 * Search bar searches through an array of objects and returns the ones that were found.
