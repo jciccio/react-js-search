@@ -14,6 +14,9 @@ Really simple search component, plug and play where you define two callbacks tha
 
 ![alt text](screenshots/search.png "React JS Search")
 
+**How to thank me?**
+Just click on ⭐️ button :)
+
 # Installation
 
 Install it from npm and include it in your React build process (using Webpack, Browserify, etc).
