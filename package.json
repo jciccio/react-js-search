@@ -1,14 +1,14 @@
 {
   "name": "react-js-search",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Really simple search component, plug and play where you define two callbacks that are triggered when the search text has changed or when the user clicks on the search button. It will trigger back the defined function with the typed String as param so you can filter a table, call your backend, etc. ",
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^16.0.0"
   },
   "dependencies": {
-    "react": "^16.0.0",
-    "webpack": "^2.6.1"
+    "@babel/polyfill": "^7.8.7",
+    "react": "^16.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,21 +20,18 @@
     "email": "jciccio@gmail.com"
   },
   "devDependencies": {
-    "babel-cli": "^6.2.0",
-    "babel-core": "^6.2.1",
-    "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.0",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-stage-1": "^6.1.18",
-    "babel-register": "^6.3.13",
-    "babel-runtime": "^6.3.19",
-    "babel-preset-env": "^1.5.1",
-    "style-loader": "^0.21.0",
-    "css-loader": "^0.28.11",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.11",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^16.3.2",
-    "react-icons": "^2.2.7",
-    "babel-polyfill": "^6.26.0"
+    "react-icons": "^3.10.0",
+    "react-dom": "^16.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3"
   },
   "repository": {
     "type": "git",

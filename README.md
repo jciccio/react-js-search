@@ -79,8 +79,18 @@ data={this.state.dataObjects}
 
 # What's new
 
+Next
+* Ability to pass icon as prop
+* Customizable style
+* Default style updates
+
+v0.3.0
+* Libraries updated
+* Overall package size optimized
+* Search icon updated
+
 v0.2.4
-* new case insensitve search
+* New case insensitve search
 
 v0.2.1
 * Search CSS isolation

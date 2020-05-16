@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import Search from "react-icons/lib/md/search";
+import {AiOutlineSearch as Search} from "react-icons/ai";
 import PropTypes from 'prop-types';
 
 /**
@@ -15,10 +15,6 @@ class SearchBar extends Component {
       searchValue: ""
     };
 
-  }
-
-  componentDidUpdate(prevProps){
-    
   }
 
   // Search will be done using:
@@ -76,10 +72,12 @@ class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
-  onSearchTextChange: PropTypes.func,
-  onSearchButtonClick: PropTypes.func,
+  onSearchTextChange: PropTypes.func.isRequired,
+  onSearchButtonClick: PropTypes.func.isRequired,
   placeHolderText: PropTypes.string,
   data: PropTypes.array
 };
+
+
 
 export default SearchBar;
