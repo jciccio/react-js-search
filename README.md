@@ -15,7 +15,7 @@ Really simple search component, plug and play where you define two callbacks tha
 ![alt text](screenshots/search.png "React JS Search")
 
 **How to thank me?**
-Just click on ⭐️ button :)
+Just click on ⭐️ button or buy me a tea using the donation button below :)
 
 # Installation
 
@@ -76,6 +76,14 @@ data={this.state.dataObjects}
 | caseInsensitive | boolean |N| do searches without casing| 
 
 
+# Donations
+
+If you think that any information you obtained here is useful and worth of some money and are willing to pay for it, feel free to send any amount through Paypal :)
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2MSMEVFF9P33N)
+
+You can also follow me on Patreon:
+https://patreon.com/Jacware
 
 # What's new
 
@@ -83,6 +91,10 @@ Next
 * Ability to pass icon as prop
 * Customizable style
 * Default style updates
+
+v0.4.0
+* All dependencies updated
+* Removed some requirements
 
 v0.3.0
 * Libraries updated

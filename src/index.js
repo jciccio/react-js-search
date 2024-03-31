@@ -49,7 +49,7 @@ class SearchBar extends Component {
             onChange={(e) => this.onSearchChange(e)}
           />
           <button onClick={(e) => this.onSearchClick(e)} >
-          <Search /> 
+          {this.props.icon} 
           </button>
         </div>
       </div>
@@ -75,8 +75,13 @@ SearchBar.propTypes = {
   onSearchTextChange: PropTypes.func.isRequired,
   onSearchButtonClick: PropTypes.func.isRequired,
   placeHolderText: PropTypes.string,
-  data: PropTypes.array
+  data: PropTypes.array,
+  icon: PropTypes.node
 };
+
+SearchBar.defaultProps = {
+  icon: <Search />
+}
 
 
 
