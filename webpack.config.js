@@ -10,14 +10,20 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       {
-        test: /\.css$/,
-        loader: "style-loader"
+        test: /\.js$/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: /(node_modules|bower_components|build)/,
+        use: {
+          loader: 'babel-loader'
+         
+        }
       },
       {
         test: /\.css$/,
-        loader: "css-loader"
+        include: path.resolve(__dirname, 'src'),
+        exclude: /(node_modules|bower_components|build)/,
+        use:['style-loader','css-loader']
       }
     ]
   },
